@@ -25,3 +25,19 @@ C:\laravel_projekti\testing\vendor\laravel\framework\src\Illuminate\Foundation\T
 C:\laravel_projekti\testing\tests\Feature\ExampleTest.php:19
 FAILURES!
 Tests: 2, Assertions: 2, Failures: 1.
+
+We add route:
+
+Route::get('/about', function () {
+    return 'About';
+});
+
+and then test in CLI   "./vendor/bin/phpunit"
+
+PHPUnit 7.4.3 by Sebastian Bergmann and contributors.
+
+..                                                                  2 / 2 (100%)
+
+Time: 1.08 seconds, Memory: 10.00MB
+
+OK (2 tests, 2 assertions)

@@ -18,4 +18,11 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    /** @test */
+    public function about_route_return_something(){
+        $response = $this->get('/about');
+        //dd($response);
+        $response->assertSee('About');
+    }
 }
